@@ -344,16 +344,16 @@ for epoch in range(_epoch + 1, 100_000):
             train_writer.add_scalar(
                 "loss_disc_all", loss_disc_all.float(), global_step=step
             )
-            print("loss_disc_all", loss_disc_all.float(), global_step=step)
+            print("loss_disc_all", loss_disc_all.float())
             train_writer.add_scalar(
                 "loss_gen_all", loss_gen_all.float(), global_step=step
             )
-            print("loss_gen_all", loss_gen_all.float(), global_step=step)
+            print("loss_gen_all", loss_gen_all.float())
             train_writer.add_scalar("loss_gen", loss_gen.float(), global_step=step)
-            print("loss_gen", loss_gen.float(), global_step=step)
+            print("loss_gen", loss_gen.float())
             train_writer.add_scalar("loss_fm", loss_fm.float(), global_step=step)
             train_writer.add_scalar("loss_mel", loss_mel.float(), global_step=step)
-            print("loss_mel", loss_mel.float(), global_step=step)
+            print("loss_mel", loss_mel.float())
             train_writer.add_scalar("loss_kl", loss_kl.float(), global_step=step)
             train_writer.add_scalar(
                 "d_grad_scale", d_scaler.get_scale(), global_step=step
